@@ -1,1 +1,1 @@
-# github_cheatsheet
+Contains an assortment of cheetsheets, style guides and simple text based information that is frequently needed.

@@ -36,7 +36,12 @@ git config --global credential.https://github.com.useHttpPath true
 ```
 This command makes each unique repo visited at github have to uniquely authenticate 
 
-you can preview git global config here:
+You can view the git config here:
+``` sh
+git config --list --global
+```
+
+The git config file is here:
 C:\Users\USERNAME\.gitconfig
 
 here's an example of what it should look like:
