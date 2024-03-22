@@ -22,7 +22,8 @@ git remote add GIT_REMOTE_NAME REMOTE_URL
 
 if you name the remote "gitlab" or "github" it will error.
 
-#Credentials
+---
+# Credentials
 
 Git takes a lot of liberties in terms of credential storage, to clean this up:
 
