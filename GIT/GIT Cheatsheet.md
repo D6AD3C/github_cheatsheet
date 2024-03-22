@@ -1,3 +1,20 @@
+# Basic Setup Example
+
+``` sh
+echo Enter the remote ID:
+read remote_id
+
+git init
+touch README.md
+touch LICENSE
+touch .gitignore
+git commit -m "first commit"
+git remote add $remote_id https://github.com/USER/REPO.git
+git branch -M master
+
+read -p "All Done! Press any key to close ..."
+```
+
 # Common Use
 
 ## Pull from GITHUB remote
