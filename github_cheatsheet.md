@@ -1,22 +1,29 @@
-# GIT CheatSheet
+#Common Use
 
 ## Pull from GITHUB remote
+
+```
 git clone https://github.com/GROUP_OR_USER_NAME/REPO_NAME.git
+```
 
 ## Push to GITHUB remote
+
+```
 git add .
 git commit -m "update"
 git push -u origin main
+```
 
 ## Remotes
 
-``` batch
+```
 git remote add GIT_REMOTE_NAME REMOTE_URL
 ```
 
 if you name the remote "gitlab" or "github" it will error.
 
-##Credential Management
+#Credentials
+
 Git takes a lot of liberties in terms of credential storage, to clean this up:
 
 ### Windows Certificates
