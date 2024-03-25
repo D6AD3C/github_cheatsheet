@@ -17,18 +17,36 @@ read -p "All Done! Press any key to close ..."
 
 # Common Use
 
-## Pull from GITHUB remote
+## Clone from remote cloud
 
 ```
 git clone https://github.com/GROUP_OR_USER_NAME/REPO_NAME.git
 ```
 
-## Push to GITHUB remote
+## Push to remote cloud 
 
-```
+``` sh
 git add .
-git commit -m "update"
+git commit -m "my commit name"
 git push -u origin main
+```
+
+With prompt to name commit (.bat)
+
+``` bat
+@echo off
+
+:: Prompt for commit message
+set /p CommitMessage=Enter commit message: 
+
+:: Check if the commit message is empty
+if "%CommitMessage%"=="" (
+    echo Commit message cannot be empty.
+    exit /b 1
+)
+
+git add .
+git commit -m "%CommitMessage%"
 ```
 
 ## Remotes
@@ -38,6 +56,16 @@ git remote add GIT_REMOTE_NAME REMOTE_URL
 ```
 
 if you name the remote "gitlab" or "github" it will error.
+
+Remove remote:
+```
+git remote remove REMOTE_NAME
+```
+
+View remotes:
+```
+git remote --v
+```
 
 ---
 # Credentials
