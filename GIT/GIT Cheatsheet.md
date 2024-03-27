@@ -1,18 +1,11 @@
 # Basic Setup Example
 
-``` sh
-echo Enter the remote ID:
-read remote_id
-
+``` bat
 git init
-touch README.md
-touch LICENSE
-touch .gitignore
+git add .
 git commit -m "first commit"
-git remote add $remote_id https://github.com/USER/REPO.git
-git branch -M master
-
-read -p "All Done! Press any key to close ..."
+git remote add REMOTE_ID https://github.com/USER/REPO.git
+git branch -M main
 ```
 
 # Common Use
@@ -20,12 +13,12 @@ read -p "All Done! Press any key to close ..."
 ## Clone from remote cloud
 
 ```
-git clone https://github.com/GROUP_OR_USER_NAME/REPO_NAME.git
+git clone https://github.com/GROUP_OR_USER_NAME/REPO_NAME
 ```
 
-## Push to remote cloud 
+## Push to remote cloud (if you cloned from github/gitlab)
 
-``` sh
+``` bat
 git add .
 git commit -m "my commit name"
 git push -u origin main
@@ -98,10 +91,6 @@ here's an example of what it should look like:
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = name_tbd
-	email = email_tbd@email_provider_tbd.com
-[credential "https://github.com"]
-	useHttpPath = true
-[credential "https://gitlab.com"]
-	useHttpPath = true
+	name = my_name
+	email = my_email@email_provider.com
 ```
